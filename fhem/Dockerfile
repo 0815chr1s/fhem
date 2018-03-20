@@ -137,9 +137,9 @@ RUN userdel fhem
 
 WORKDIR "/opt/fhem"
 
-COPY fhem/start.sh ./
+COPY core/start.sh ./
 
 EXPOSE 8083 7072
 
 CMD bash /opt/fhem/start.sh
- 
+#RUN perl fhem.pl fhem.cfg | tee /opt/fhem/log/fhem.log 

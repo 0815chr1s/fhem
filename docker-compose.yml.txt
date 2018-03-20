@@ -1,0 +1,21 @@
+version: '1'
+
+services:
+    fhem:
+        restart: always
+        expose:
+            - "8083"
+            - "7072"
+        ports:
+            - "8083:8083"
+            - "7072:7072"
+        build: fhem
+        privileged: true
+        volumes:
+            - ./fhem/core/:/opt/fhem/
+        networks:
+            - fhem-network       
+
+networks:
+    fhem-network:
+        driver: bridge
