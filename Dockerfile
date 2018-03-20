@@ -7,7 +7,6 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV TZ=Europe/Paris
 
-
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y --force-yes && apt-get install -y --force-yes --no-install-recommends apt-utils
 RUN apt-get -y --force-yes install \
@@ -122,19 +121,12 @@ RUN cpan Crypt::Rijndael_PP
 RUN cpan Net::MQTT::Simple
 RUN cpan Net::MQTT::Constants
 
-
-
 #ZYZ:
 #RUN cpan MIME:Lite
 #RUN cpan Net:SMTP:SSL
 #RUN cpan Image::Grab
 #RUN cpan XML::Parser::Lite
 #zyz
-
-
-
-
-
 
 # Install fhem
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
