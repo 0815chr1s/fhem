@@ -137,8 +137,9 @@ RUN userdel fhem
 
 WORKDIR "/opt/fhem"
 
-COPY start.sh ./
+COPY fhem/start.sh ./
 
 EXPOSE 8083 7072
 
 CMD bash /opt/fhem/start.sh
+ 
