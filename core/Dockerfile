@@ -80,40 +80,40 @@ libtext-diff-perl \
 libtimedate-perl \
 libwww-perl \
 #zyz
-#libxml-perl \
-#libxml-sax-perl \
-#libwww-perl \
-#libarchive-zip-perl \
-#libcrypt-random-seed-perl \
-#libcrypt-random-source-perl \
-#libcrypt-rijndael-perl \
-#libcrypt-ssleay-perl \
-#libdatetime-locale-perl \
-#libdatetime-perl \
-#libdevice-serialport-perl \
-#libgd-graph-perl \
-#libhttp-server-simple-perl \
-#libnet-telnet-perl \
-#libio-socket-ssl-perl \
-#libjson-perl \
-#libnet-smtp-ssl-perl \
-#libnet-ssleay-perl \
-#libsoap-lite-perl \
-#libhttp-request-params-perl \
-#libnet-upnp-perl \
-#libxml-parser-lite-perl \
-#libfile-queue-perl \
-#libio-socket-ip-perl \
-#librpc-xml-perl \
-#libtime-hires-perl \
-#libtest-lwp-useragent-perl \
-#libjson-perl \
-#libsoap-lite-perl \
-#libjson-xs-perl \
-#libsys-statistics-linux-perl \
-#libnet-snmp-perl \
-#libio-socket-ssl-perl \
-#libnet-ssleay-perl perl
+libxml-perl \
+libxml-sax-perl \
+libwww-perl \
+libarchive-zip-perl \
+libcrypt-random-seed-perl \
+libcrypt-random-source-perl \
+libcrypt-rijndael-perl \
+libcrypt-ssleay-perl \
+libdatetime-locale-perl \
+libdatetime-perl \
+libdevice-serialport-perl \
+libgd-graph-perl \
+libhttp-server-simple-perl \
+libnet-telnet-perl \
+libio-socket-ssl-perl \
+libjson-perl \
+libnet-smtp-ssl-perl \
+libnet-ssleay-perl \
+libsoap-lite-perl \
+libhttp-request-params-perl \
+libnet-upnp-perl \
+libxml-parser-lite-perl \
+libfile-queue-perl \
+libio-socket-ip-perl \
+librpc-xml-perl \
+libtime-hires-perl \
+libtest-lwp-useragent-perl \
+libjson-perl \
+libsoap-lite-perl \
+libjson-xs-perl \
+libsys-statistics-linux-perl \
+libnet-snmp-perl \
+libio-socket-ssl-perl \
+libnet-ssleay-perl perl \
 #zyz
 libxml-simple-perl
 
@@ -122,10 +122,10 @@ RUN cpan Net::MQTT::Simple
 RUN cpan Net::MQTT::Constants
 
 #ZYZ:
-#RUN cpan MIME:Lite
-#RUN cpan Net:SMTP:SSL
-#RUN cpan Image::Grab
-#RUN cpan XML::Parser::Lite
+RUN cpan MIME:Lite
+RUN cpan Net:SMTP:SSL
+RUN cpan Image::Grab
+RUN cpan XML::Parser::Lite
 #zyz
 
 # Install fhem
