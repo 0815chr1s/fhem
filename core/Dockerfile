@@ -6,6 +6,7 @@ ENV FHEM_VERSION 5.8
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV TZ=Europe/Paris
+ENV MY_VERSION=1.01
 
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y --force-yes && apt-get install -y --force-yes --no-install-recommends apt-utils
@@ -122,7 +123,7 @@ RUN cpan Net::MQTT::Simple
 RUN cpan Net::MQTT::Constants
 
 #ZYZ:
-RUN cpan MIME:Lite
+RUN cpan MIME::Lite
 RUN cpan Net:SMTP:SSL
 RUN cpan Image::Grab
 RUN cpan XML::Parser::Lite
