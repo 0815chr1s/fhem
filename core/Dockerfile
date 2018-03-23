@@ -6,7 +6,6 @@ ENV FHEM_VERSION 5.8
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV TZ=Europe/Paris
-ENV MY_VERSION=1.02
 
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y --force-yes && apt-get install -y --force-yes --no-install-recommends apt-utils
@@ -81,6 +80,7 @@ libtext-diff-perl \
 libtimedate-perl \
 libwww-perl \
 #zyz
+sendemail \
 libxml-perl \
 libxml-sax-perl \
 libwww-perl \
@@ -95,7 +95,6 @@ libdevice-serialport-perl \
 libgd-graph-perl \
 libhttp-server-simple-perl \
 libnet-telnet-perl \
-libio-socket-ssl-perl \
 libjson-perl \
 libnet-smtp-ssl-perl \
 libnet-ssleay-perl \
@@ -114,7 +113,6 @@ libjson-xs-perl \
 libsys-statistics-linux-perl \
 libnet-snmp-perl \
 libio-socket-ssl-perl \
-libnet-ssleay-perl perl \
 #zyz
 libxml-simple-perl
 
