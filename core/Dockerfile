@@ -129,6 +129,10 @@ RUN cpan Image::Grab
 RUN cpan XML::Parser::Lite
 #zyz
 
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 # Install fhem
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
