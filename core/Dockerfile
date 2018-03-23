@@ -140,6 +140,6 @@ WORKDIR "/opt/fhem"
 
 COPY start.sh ./
 
-EXPOSE 8083 7072
+EXPOSE 8083 7072 8090 25
 
 CMD bash /opt/fhem/start.sh
