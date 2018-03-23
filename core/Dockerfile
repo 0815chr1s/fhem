@@ -6,7 +6,7 @@ ENV FHEM_VERSION 5.8
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV TZ=Europe/Paris
-ENV MY_VERSION=1.01
+ENV MY_VERSION=1.02
 
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y --force-yes && apt-get install -y --force-yes --no-install-recommends apt-utils
